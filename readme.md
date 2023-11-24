@@ -18,7 +18,7 @@ Uma plataforma de saúde inovadora, moderna e centrada no paciente, redefinindo 
 
 ## Instruções de Uso 🦄
 
-1 - clonar o repositório git ``
+1 - clonar o repositório git `https://github.com/enzoolu/GS---Edge`
 <br>
 2 - Executar o projeto no wokwi
 <br>
