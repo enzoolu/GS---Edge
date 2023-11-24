@@ -1,20 +1,10 @@
-# CareBot :hospital:
-
-Uma plataforma de saúde inovadora, moderna e centrada no paciente, redefinindo a experiência hospitalar com eficiência, tecnologia e humanização.
-
 ## Descrição do problema abordado 📜
 
-O tempo excessivo que os pacientes passam nos hospitais é um desafio significativo que impacta negativamente a experiência do paciente e a eficiência operacional das instituições de saúde. Longos períodos de espera podem resultar em desconforto para os pacientes e afetar adversamente a qualidade do atendimento prestado.
+A contagem de estoque em hospitais enfrenta desafios, como erros humanos durante a contagem manual, falta de padronização nos procedimentos e a demora associada a esse processo, impactando a entrega eficiente de suprimentos essenciais.
 
 ## Solução proposta 🎉
 
-Uma plataforma de saúde inovadora, moderna e centrada no paciente, redefinindo a experiência hospitalar com eficiência, tecnologia e humanização.
-
-* Agendamento Online
-* Notificações em tempo real
-* Registros de saúde eletrônicos do paciente
-* Check-in virtual
-* FeedBack do paciente
+Uma solução inovadora para otimizar o controle de estoque em hospitais envolve a aplicação de tecnologia Arduino em conjunto com sensores ultrassônicos. Ao integrar esses dispositivos aos locais de armazenamento de medicamentos, é possível monitorar em tempo real os níveis de estoque. Os sensores ultrassônicos detectam automaticamente a quantidade de medicamentos presentes através da distancia dos produtos ao sensor.
 
 ## Instruções de Uso 🦄
 
