@@ -19,8 +19,11 @@ Uma plataforma de saúde inovadora, moderna e centrada no paciente, redefinindo 
 ## Instruções de Uso 🦄
 
 1 - clonar o repositório git ``
+<br>
 2 - Executar o projeto no wokwi
+<br>
 3 - Executar o node-red no Prompt de comando `node-red`
+<br>
 4 - Abrir o Dashboard no node-red
 
 ## Contribuição ✨
