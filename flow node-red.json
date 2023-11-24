@@ -1,0 +1,169 @@
+[
+    {
+        "id": "eb8a86cbac212090",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5935dd1d79443054",
+        "type": "mqtt in",
+        "z": "eb8a86cbac212090",
+        "name": "",
+        "topic": "estoque/distancia/iot",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3b0a7c057e3d172b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 660,
+        "wires": [
+            [
+                "5a89a39d49ae1a7c"
+            ]
+        ]
+    },
+    {
+        "id": "78ccbf305a25657e",
+        "type": "json",
+        "z": "eb8a86cbac212090",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 910,
+        "y": 660,
+        "wires": [
+            [
+                "80af2fcb3af55de6",
+                "d58a9a647e7abf51"
+            ]
+        ]
+    },
+    {
+        "id": "80af2fcb3af55de6",
+        "type": "debug",
+        "z": "eb8a86cbac212090",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "5a89a39d49ae1a7c",
+        "type": "change",
+        "z": "eb8a86cbac212090",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 660,
+        "wires": [
+            [
+                "78ccbf305a25657e"
+            ]
+        ]
+    },
+    {
+        "id": "d58a9a647e7abf51",
+        "type": "ui_gauge",
+        "z": "eb8a86cbac212090",
+        "name": "",
+        "group": "e2f9f407608d69c7",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "estoque",
+        "label": "peças",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#b30000",
+            "#e6e600",
+            "#2bff00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1100,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "3b0a7c057e3d172b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e2f9f407608d69c7",
+        "type": "ui_group",
+        "name": "Contagem de estoque",
+        "tab": "a4f051166d0a539e",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a4f051166d0a539e",
+        "type": "ui_tab",
+        "name": "GS Egde - Contagem de estoque",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    }
+]
